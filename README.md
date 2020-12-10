@@ -1,8 +1,10 @@
 # MeshGraph in PyTorch
 
-Transfroming Mesh data to Mesh Graph Tology through the idea of Finite Element, Paper is publishing soon.
-![transfrom](img/1.png)
-![network](img/3.png)
+Transfroming Mesh data to Mesh Graph Tology through the idea of Finite Element, Paper is published on IEEE [url](https://ieeexplore.ieee.org/document/9253518).
+## Transform to Topology Graph
+![transfrom](images/5.png)
+## Network Structure
+![network](images/4.png)
 # Getting Started 
 
 ### Installation
@@ -61,15 +63,31 @@ Running Test
 loading the model from ./ckpt_root/40_graph/final_net.pth
 epoch: -1, TEST ACC: [94.49 %]
 ```
-![result](img/2.png)
-
+![result1](images/2.png)
+![result2](images/3.png)
 # Train on your Dataset
 ### Coming soon
 
+# Some 3D Reconstruct conducted on 3d face
+![face](images/6.png)
+ 
 # Credit
 
-### MeshGraphNet: An Effective 3D Polygon Mesh Recognition with Topology Reconstruction
-AnPing S,XinYi D <br>
+### MeshGraphNet: An Effective 3D Polygon Mesh Recognition With Topology Reconstruction
+An Ping Song ; Xin Yi Di; Xiao Kang Xu; Zi Heng Song <br>
 
 **Abstract** <br>
-Three-dimensional polygon mesh recognition has a significant impact on current computer graphics. However, its application to some real-life fields, such as unmanned driving and medical image processing, has been restricted due to the lack of inner-interactivity, shift-invariance, and  numerical uncertainty of mesh surfaces. In this paper, an interconnected topological dual graph that extracts adjacent information from each triangular face of a polygon mesh is constructed, in order to address the above issues. On the basis of the algebraic topological graph, we propose a mesh graph neural network, called MeshGraphNet, to effectively extract features from mesh data. In this method, the graph node-unit and correlation between every two dual graph vertexes are defined, and the concept of aggregating features extracted from geodesically adjacent nodes is introduced. A graph neural network with available and effective blocks is proposed. With these methods, MeshGraphNet performs well in 3D shape representation, while avoiding the lack of inner-interactivity, shift-invariance, and the numerical uncertainty problems of mesh data. We conduct extensive 3D shape classification experiments and provide visualizations of the features extracted from the fully connected layers. The results demonstrate that our method performs better than state-of-the-art methods and improves the recognition accuracy by 4--4.5%.
+Three-dimensional polygon mesh recognition has a significant impact on current computer graphics. However, its application to some real-life fields, such as unmanned driving and medical image processing, has been restricted due to the lack of inner-interactivity, shift-invariance, and numerical uncertainty of mesh surfaces. In this paper, an interconnected topological dual graph that extracts adjacent information from each triangular face of a polygon mesh is constructed, in order to address the above issues. On the basis of the algebraic topological graph, we propose a mesh graph neural network, called MeshGraphNet, to effectively extract features from mesh data. In this concept, the graph node-unit and correlation between every two dual graph vertexes are defined, the concept of aggregating features extracted from geodesically adjacent nodes is introduced, and a graph neural network with available and effective blocks is proposed. With these methods, MeshGraphNet performs well in 3D shape representation by avoiding the lack of inner-interactivity, shift-invariance, and the numerical uncertainty problems of mesh data. We conduct extensive 3D shape classification experiments and provide visualizations of the features extracted from the fully connected layers. The results demonstrate that our method performs better than state-of-the-art methods and improves the recognition accuracy by 4–4.5%.
+
+If you find this code useful, please consider citing our paper
+
+``` bash
+@article{Song2020MeshGraphNetAE,
+  title={MeshGraphNet: An Effective 3D Polygon Mesh Recognition With Topology Reconstruction},
+  author={An Ping Song and Xin Yi Di and X. Xu and Zi Heng Song},
+  journal={IEEE Access},
+  year={2020},
+  volume={8},
+  pages={205181-205189}
+}
+```

@@ -115,3 +115,4 @@ demo.py
 test_*
 demo.py
 draw_features.py
+!images/*
